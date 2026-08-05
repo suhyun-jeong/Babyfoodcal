@@ -1,0 +1,10 @@
+{
+  "description": "Calculates precise ingredient amounts for baby porridge based on stage and quantity to support healthy weaning and meal preparation.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
