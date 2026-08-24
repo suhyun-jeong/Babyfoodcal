@@ -3,6 +3,7 @@ import BabyPorridgeCalculator from './components/BabyPorridgeCalculator'
 import IngredientGuide from './components/IngredientGuide'
 import FeedingGuide from './components/FeedingGuide'
 import CubeManager from './components/CubeManager'
+import CoupangBanner from './components/CoupangBanner'
 
 type Tab = 'calculator' | 'ingredients' | 'guide' | 'cubes'
 
@@ -32,6 +33,9 @@ export default function App() {
         {activeTab === 'ingredients' && <IngredientGuide />}
         {activeTab === 'guide' && <FeedingGuide />}
         {activeTab === 'cubes' && <CubeManager />}
+        <div className="mt-6 flex justify-center">
+          <CoupangBanner />
+        </div>
       </main>
 
       {/* Bottom Tab Bar */}
