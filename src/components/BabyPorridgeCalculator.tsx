@@ -232,6 +232,18 @@ export default function BabyPorridgeCalculator() {
         )}
       </div>
 
+      {/* Carousel Banner */}
+      <div className="flex justify-center w-full overflow-hidden rounded-2xl">
+        <iframe
+          srcDoc={`<!DOCTYPE html><html><head><style>body{margin:0;display:flex;justify-content:center;align-items:center;overflow:hidden;}</style></head><body><script src="https://ads-partners.coupang.com/g.js"><\/script><script>new PartnersCoupang.G({"id":1021493,"template":"carousel","trackingCode":"AF2623204","width":"500","height":"140","tsource":""});<\/script></body></html>`}
+          width={500}
+          height={140}
+          scrolling="no"
+          frameBorder={0}
+          style={{ border: 'none', display: 'block', maxWidth: '100%' }}
+        />
+      </div>
+
       {/* Ingredient ratio bar */}
       <div className="rounded-2xl p-4" style={{ backgroundColor: '#ffffff', border: '1px solid #f0ebe5' }}>
         <p className="text-xs font-semibold mb-3" style={{ color: '#9b9b9b' }}>재료 비율</p>
