@@ -4,14 +4,16 @@ import IngredientGuide from './components/IngredientGuide'
 import FeedingGuide from './components/FeedingGuide'
 import CubeManager from './components/CubeManager'
 import CoupangBanner from './components/CoupangBanner'
+import PrivacyPolicy from './components/PrivacyPolicy'
 
-type Tab = 'calculator' | 'ingredients' | 'guide' | 'cubes'
+type Tab = 'calculator' | 'ingredients' | 'guide' | 'cubes' | 'privacy'
 
 const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: 'calculator', label: '배죽 계산기', icon: '🍚' },
   { id: 'ingredients', label: '추천 식재료', icon: '🥕' },
   { id: 'guide', label: '이유식 가이드', icon: '📖' },
   { id: 'cubes', label: '큐브 관리', icon: '🧊' },
+  { id: 'privacy', label: '개인정보', icon: '🔒' },
 ]
 
 export default function App() {
@@ -33,6 +35,7 @@ export default function App() {
         {activeTab === 'ingredients' && <IngredientGuide />}
         {activeTab === 'guide' && <FeedingGuide />}
         {activeTab === 'cubes' && <CubeManager />}
+        {activeTab === 'privacy' && <PrivacyPolicy />}
         <div className="mt-6 flex justify-center">
           <CoupangBanner />
         </div>
